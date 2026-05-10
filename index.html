@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EDITAR: Título de la pestaña -->
+    <title>Educación Financiera - ETFs Bancarios</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --primary-color: #00448d; --accent-color: #fdc300; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; }
+        .navbar { background-color: var(--primary-color) !important; }
+        .carousel-item img { height: 500px; object-fit: cover; filter: brightness(0.6); }
+        .gallery-img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; transition: 0.3s; }
+        .gallery-img:hover { transform: scale(1.03); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .footer-custom { background: #111; color: white; padding: 50px 0; margin-top: 60px; }
+        .content-long { line-height: 2; text-align: justify; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+<!-- NAVEGACIÓN: Aquí editas los nombres de los botones -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">FINANZA-EDU</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Educación ETFs</a></li>
+                <li class="nav-item"><a class="nav-link" href="bolsa.html">Bolsa de Valores</a></li>
+                <li class="nav-item"><a class="nav-link" href="forex.html">Mercado Forex</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CARRUSEL DE IMÁGENES -->
+<div id="mainCarousel" class="carousel slide shadow" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/164527/pexels-photo-164527.jpeg?auto=compress&cs=tinysrgb&w=1260" class="d-block w-100" alt="Bancos">
+            <div class="carousel-caption">
+                <h2 class="display-4 fw-bold">Invertir en Bancos Líderes</h2>
+                <p>Domina el mercado de Bancolombia y Banco de Bogotá.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/3483061/pexels-photo-3483061.jpeg?auto=compress&cs=tinysrgb&w=1260" class="d-block w-100" alt="Crecimiento">
+            <div class="carousel-caption">
+                <h2 class="display-4 fw-bold">Interés Compuesto</h2>
+                <p>La clave para multiplicar tu capital exponencialmente.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTENIDO EXTENSO -->
+<div class="container my-5 content-long">
+    <!-- EDITAR: Título y Párrafos aquí -->
+    <h2 class="text-primary mb-4">El Camino a la Riqueza: Educación e Interés Compuesto</h2>
+    <p>Invertir en ETFs (Exchange Traded Funds) bancarios es una de las decisiones más inteligentes para quienes buscan estabilidad y crecimiento en el mercado colombiano. Instituciones como <strong>Bancolombia</strong> y <strong>Banco de Bogotá</strong> representan la columna vertebral de la economía nacional. Al adquirir un ETF que contiene estas acciones, no solo estás protegiendo tu dinero, sino participando de sus utilidades.</p>
+    
+    <h4 class="mt-5">La Magia del Interés Compuesto</h4>
+    <p>Imagina que inviertes $1.000.000 COP mensuales. En el primer año, el crecimiento parece lento, pero al cabo de 10 o 20 años, los intereses generados empiezan a producir sus propios intereses. Este efecto de "bola de nieve" es lo que diferencia a un ahorrador de un inversor exitoso. En esta página aprenderás que el tiempo en el mercado es más valioso que intentar adivinar el momento perfecto para comprar.</p>
+    
+    <p>(Aquí puedes añadir más párrafos similares para completar la extensión deseada...)</p>
+
+    <!-- GALERÍA DE 20 FOTOS -->
+    <h3 class="mt-5 mb-4 text-center">Galería Educativa y Bancaria</h3>
+    <!--<div class="row g-3">
+        <!-- Generación de 20 imágenes dinámicas 
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/1/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/2/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/3/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/4/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/5/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/6/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/7/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/8/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/9/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/10/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/11/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/12/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/13/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/14/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/15/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/16/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/17/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/18/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/19/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/20/400/300" class="gallery-img"></div>
+    </div>-->
+    <!-- GALERÍA CORREGIDA: 20 IMÁGENES DIFERENTES DE BANCOS Y ETFs -->
+<h3 class="mt-5 mb-4 text-center text-primary fw-bold">Registro Visual de Activos y Transacciones</h3>
+<div class="row g-3">
+    <!-- Imagen 1: Edificio Bancario -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 2: Gráficos ETFs -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/6770610/pexels-photo-6770610.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 3: Cajero / ATM -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 4: Tarjeta de Crédito -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 5: Pago Móvil -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/6261239/pexels-photo-6261239.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 6: Bóveda Bancaria -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/2791307/pexels-photo-2791307.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 7: Monedas de Oro -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/106152/euro-coins-currency-money-106152.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 8: Firma de Contrato -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/4506249/pexels-photo-4506249.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 9: Pantallas de Trading -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 10: Asesor Financiero -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/6694543/pexels-photo-6694543.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 11: Contando Billetes -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/3943716/pexels-photo-3943716.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 12: Gráficos en Tablet -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/6771574/pexels-photo-6771574.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 13: Bolsa de Valores -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 14: Tecnología Bancaria -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/5466806/pexels-photo-5466806.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 15: Crecimiento (Planta/Monedas) -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/1602726/pexels-photo-1602726.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 16: Check de Depósito -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 17: Inversión Global -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 18: Calculadora y Planificación -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 19: Gráfica Alcista -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+    <!-- Imagen 20: Bitcoin y Digital Assets -->
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1" class="gallery-img"></div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-custom text-center">
+    <div class="container">
+        <h3>FINANZA-EDU</h3>
+        <p>Tu portal de educación financiera líder en Colombia.</p>
+        <hr class="bg-light">
+        <p class="mb-0">© 2026 Todos los derechos reservados. Diseñado para Vercel.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

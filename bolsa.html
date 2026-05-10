@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Valores - Global y Local</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar { background-color: #212529 !important; }
+        .carousel-item img { height: 450px; object-fit: cover; }
+        .gallery-img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; transition: 0.3s; }
+        footer { background: #111; color: white; padding: 40px 0; margin-top: 50px; }
+    </style>
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">FINANZA-EDU</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Educación ETFs</a></li>
+                <li class="nav-item"><a class="nav-link active" href="bolsa.html">Bolsa de Valores</a></li>
+                <li class="nav-item"><a class="nav-link" href="forex.html">Mercado Forex</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- CARRUSEL -->
+<div id="bolsaCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg" class="d-block w-100" alt="Bolsa">
+            <div class="carousel-caption"><h3>Mercados Mundiales</h3></div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="container my-5">
+    <h2>Gráficas de Mercado y Estrategias</h2>
+    <!-- TRADINGVIEW WIDGET 
+    <div class="card p-3 shadow-sm mb-5">
+        <div id="tradingview_bolsa"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+        new TradingView.MediumWidget({
+          "symbols": [ ["Apple", "AAPL|1D"], ["S&P 500", "SPY|1D"], ["Ecopetrol", "BVC:ECOPETROL|1D"] ],
+          "width": "100%", "height": 450, "locale": "es", "theme": "light"
+        });
+        </script>
+    </div>-->
+    <!-- SECCIÓN DE GRÁFICAS BURSÁTILES MÚLTIPLES -->
+<div class="container my-5">
+    <h2 class="fw-bold mb-4 text-center text-dark">Monitor de Mercados Globales</h2>
+    
+    <div class="row g-4">
+        <!-- 1. Gráfica Principal: S&P 500 (El termómetro del mundo) -->
+        <div class="col-12 col-lg-8">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-white fw-bold">Índice S&P 500 - Tendencia Global</div>
+                <div id="tv_sp500"></div>
+            </div>
+        </div>
+
+        <!-- 2. Gráfica de Ecopetrol (Acción clave en Colombia) -->
+        <div class="col-12 col-lg-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-white fw-bold">BVC: ECOPETROL</div>
+                <div id="tv_ecopetrol"></div>
+            </div>
+        </div>
+
+        <!-- 3. Gráfica de Apple (Líder Tecnológico) -->
+        <div class="col-12 col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white fw-bold">Apple Inc. (AAPL)</div>
+                <div id="tv_apple"></div>
+            </div>
+        </div>
+
+        <!-- 4. Gráfica de Petróleo Brent (Vital para el peso colombiano) -->
+        <div class="col-12 col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white fw-bold">Petróleo Brent (UKOIL)</div>
+                <div id="tv_brent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS DE TRADINGVIEW -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        // 1. S&P 500
+        new TradingView.widget({
+          "width": "100%", "height": 500, "symbol": "SPY",
+          "interval": "D", "theme": "light", "style": "3", "locale": "es",
+          "container_id": "tv_sp500"
+        });
+
+        // 2. ECOPETROL
+        new TradingView.widget({
+          "width": "100%", "height": 500, "symbol": "BVC:ECOPETROL",
+          "interval": "D", "theme": "light", "style": "1", "locale": "es",
+          "container_id": "tv_ecopetrol"
+        });
+
+        // 3. APPLE
+        new TradingView.widget({
+          "width": "100%", "height": 300, "symbol": "NASDAQ:AAPL",
+          "interval": "60", "theme": "light", "style": "1", "locale": "es",
+          "container_id": "tv_apple"
+        });
+
+        // 4. BRENT
+        new TradingView.widget({
+          "width": "100%", "height": 300, "symbol": "TVC:UKOIL",
+          "interval": "60", "theme": "light", "style": "2", "locale": "es",
+          "container_id": "tv_brent"
+        });
+    </script>
+</div>
+
+    <!-- CONTENIDO LARGO -->
+    <div class="content-text my-5" style="line-height: 2;">
+        <h3>Cómo Invertir en ETFs Colombianos e Internacionales</h3>
+        <p>Invertir en la Bolsa de Valores de Colombia (BVC) requiere entender los ciclos económicos locales. El ETF <strong>ICOLCAP</strong> es la herramienta preferida por los expertos para obtener exposición a las 20 acciones más importantes del país con un solo clic.</p>
+        <p>Por otro lado, diversificar en la bolsa de Estados Unidos mediante el S&P 500 te protege contra la devaluación del peso. Aquí te mostramos cómo equilibrar ambos mundos...</p>
+        <!-- EDITAR: Puedes duplicar estos párrafos para hacer el texto de 5 páginas -->
+    </div>
+
+    <!-- GALERÍA 20 FOTOS -->
+    <h3 class="mb-4">Galería: El Mundo de las Acciones</h3>
+    <!--<div class="row g-3">
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/101/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/102/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/103/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/104/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/106/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/107/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/108/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/109/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/110/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/111/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/112/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/113/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/114/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/115/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/116/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/117/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/118/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/119/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/120/400/300" class="gallery-img"></div>
+        <div class="col-md-3 col-6"><img src="https://picsum.photos/id/121/400/300" class="gallery-img"></div>
+    </div>-->
+    <!-- GALERÍA CORREGIDA: 20 IMÁGENES DIFERENTES DE BOLSA DE VALORES -->
+<h3 class="mt-5 mb-4 text-center fw-bold">Mercado Accionario Global</h3>
+<div class="row g-3">
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/7567443/pexels-photo-7567443.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/2432299/pexels-photo-2432299.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/534216/pexels-photo-534216.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/210574/pexels-photo-210574.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/3483061/pexels-photo-3483061.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/6771233/pexels-photo-6771233.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/8369651/pexels-photo-8369651.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/259249/pexels-photo-259249.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/1624895/pexels-photo-1624895.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+    <div class="col-md-3 col-6"><img src="https://images.pexels.com/photos/14751274/pexels-photo-14751274.jpeg?auto=compress&cs=tinysrgb&w=400&h=300" class="gallery-img"></div>
+</div>
+</div>
+
+<footer class="text-center">
+    <p>© 2026 Finanza-Edu - Análisis Bursátil</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
